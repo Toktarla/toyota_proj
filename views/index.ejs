@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota</title>
+    <link rel="icon" type="image/x-icon" href="myicon.ico"/>
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+
+    <!--Home section-->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1 data-i18n="homeTitle">
+          We Have Everything <br />
+          Your <span>Toyota</span> Needs
+        </h1>
+        <p data-i18n="homeDescription">
+          Discover the world of Toyota vehicles, designed to cater to your needs
+          and preferences. Whether it's efficiency, performance, or reliability,
+          Toyota has it all.
+        </p>
+        <!--home Button-->
+        <a href="/cars" class="btn" data-i18n="exploreToyotaModels"
+          >Explore Toyota Models</a
+        >
+      </div>
+    </section>
+
+    <section>
+      <section class="about container" id="about">
+        <div class="about-img">
+          <img src="https://freepngimg.com/save/17023-toyota-car-png-file/750x344" alt="" />
+        </div>
+        <div class="about-text">
+          <span data-i18n="aboutTitle">About Toyota</span>
+          <h2 data-i18n="aboutSubtitle">Quality Cars at Affordable Prices</h2>
+          <p data-i18n="aboutDescription">
+            Discover the story of Toyota - a brand committed to providing
+            quality vehicles at prices that won't break the bank. Learn about
+            our dedication to craftsmanship, innovation, and customer
+            satisfaction.
+          </p>
+          <!--About Button-->
+          <a href="/about" class="btn" data-i18n="discoverToyota"
+            >Discover Toyota</a
+          >
+        </div>
+      </section>
+    </section>
+
+    <!--Blog Container-->
+    <section class="blog" id="blog">
+      <div class="heading">
+        <span data-i18n="blogTitle">Toyota Blog & News</span>
+        <h2 data-i18n="latestArticles">Explore Our Latest Articles</h2>
+        <p data-i18n="stayUpdated">
+          Stay up-to-date with the latest news, updates, and insights from the
+          world of Toyota. Explore our blog content covering everything from
+          vehicle reviews to industry trends.
+        </p>
+      </div>
+      <!--Blog Container-->
+      <div class="blog-container container">
+        <!--Box 1-->
+        <div class="box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIrz9c99f1w8WlkeOYlPAntpbg5uzbKs3h4bMYPsT5_mGt4WOCNWX22YLCpeTbqUQ0qmY&usqp=CAU"
+            alt="Toyota Photo"
+            height="200px"
+            width="200px"
+          />
+          <span>February 21 2024</span>
+          <h3 data-i18n="box1Title">
+            The Evolution of Toyota: From the First Car to Future Innovations
+          </h3>
+          <p data-i18n="box1Description">
+            Trace Toyota's rich history, highlighting pivotal moments and
+            innovations that shaped the automotive industry, while also peering
+            into the future of Toyota's technological advancements.
+          </p>
+          <a
+            href="https://mag.toyota.co.uk/75-years-of-toyota-a-brief-history"
+            class="blog-btn"
+            data-i18n="readMore"
+            >Read More<i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <!--Box 2-->
+        <div class="box">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm034uGsXP8asICAHOKk2rLQ_vrkISprw8Jg&usqp=CAU"
+            alt="Toyota Photo"
+            height="200px"
+            width="200px"
+          />
+          <span>February 22 2024</span>
+          <h3 data-i18n="box2Title">
+            Top Toyota Models for Different Lifestyles: Finding Your Perfect Fit
+          </h3>
+          <p data-i18n="box2Description">
+            Explore a diverse range of Toyota vehicles, from rugged SUVs to
+            eco-friendly hybrids, showcasing how each model caters to different
+            lifestyles and needs, helping readers find their perfect fit on the
+            road.
+          </p>
+          <a
+            href="https://www.wellesleytoyota.com/which-toyota-vehicle-is-best-for-your-lifestyle"
+            class="blog-btn"
+            data-i18n="readMore"
+            >Read More<i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+        <!--Box 3-->
+        <div class="box">
+          <img
+            src="https://di-uploads-pod14.dealerinspire.com/toyotaoforlando/uploads/2022/01/Car-Hacks-Toyota.jpeg"
+            alt="Toyota Photo"
+            height="200px"
+            width="200px"
+          />
+          <span>February 23 2024</span>
+          <h3 data-i18n="box3Title">
+            Behind the Wheel: Exploring Toyota's Commitment to Sustainability
+          </h3>
+          <p data-i18n="box3Description">
+            Delve into Toyota's holistic approach to sustainability,
+            encompassing eco-friendly vehicle technologies, manufacturing
+            processes, and corporate initiatives aimed at reducing environmental
+            impact, paving the way for a greener automotive future.
+          </p>
+          <a
+            href="https://www.phillongtoyota.com/toyotas-commitment-to-sustainability.htm"
+            class="blog-btn"
+            data-i18n="readMore"
+            >Read More<i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+      let search = document.querySelector(".search-box");
+
+      document.querySelector("#search-icon").onclick = () => {
+        search.classList.toggle("active");
+        menu.classList.remove("active");
+      };
+
+      let menu = document.querySelector(".navbar");
+
+      document.querySelector("#menu-icon").onclick = () => {
+        menu.classList.toggle("active");
+        search.classList.remove("active");
+      };
+
+      // Hide Menu And Search Box On Scroll
+      window.onscroll = () => {
+        menu.classList.remove("active");
+        search.classList.remove("active");
+      };
+
+      //header
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("shadow", window.scrollY > 0);
+      });
+    </script>
+
+    
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+
+    <!-- Language -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/i18n/jquery.i18n.js"></script>
+    <script src="js/i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/i18n/jquery.i18n.language.js"></script>
+    <script src="js/i18n/jquery.i18n.parser.js"></script>
+    <script src="js/i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="js/i18n/languages/ru.js"></script>
+    <script src="js/global.js"></script>
+  </body>
+</html>

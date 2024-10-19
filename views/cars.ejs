@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota</title>
+    <link rel="icon" type="image/x-icon" href="myicon.ico" />
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <a href="/main" class="navbar-brand logo">Toyota<span>Sales</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/cars" data-i18n="navCars"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/suvs" data-i18n="navSUVs">Crossovers & SUVs</a>
+              </li>
+      
+              <li class="nav-item">
+                <a class="nav-link" href="/trucks" data-i18n="navTrucks">Trucks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/upcoming" data-i18n="navUpcoming">Upcoming Vehicles</a>
+              </li>
+            </ul>
+      
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="/search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="/quiz" class="nav-link"><i class="fa-solid fa-vials"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="/user-info" class="nav-link"><i class="fa-solid fa-user"></i></a>
+              </li>
+      
+              <li class="nav-item language-selector">
+                <select id="lang-select">
+                  <option value="en">English</option>
+                  <option value="ru">Русский</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    </header>
+
+    <!--cars section-->
+    <section class="cars" id="cars">
+      <div class="heading">
+        <h2 style="margin-top: 7rem; color: #d90429" data-i18n="carsHeading">
+          Cars and Minivans
+        </h2>
+        <p style="margin-top: 1rem" data-i18n="carsExplore">
+          Explore our versatile selection
+        </p>
+      </div>
+
+      <div class="cars-container container">
+        <% cars.forEach(function(car) { %>
+        <div class="box">
+          <img
+            src="<%= car.pictureUrl %>"
+            alt="Me if image not showed properly -> ): "
+          />
+          <h2><%= car.name %></h2>
+        </div>
+
+        <% }); %>
+      </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+      let search = document.querySelector(".search-box");
+
+      let menu = document.querySelector(".navbar");
+
+      //header
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("shadow", window.scrollY > 0);
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/footer.js"></script>
+    <script src="js/language.js"></script>
+
+    <!-- Language -->
+    <script src="/js/i18n/jquery.i18n.js"></script>
+    <script src="/js/i18n/jquery.i18n.messagestore.js"></script>
+    <script src="/js/i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="/js/i18n/jquery.i18n.language.js"></script>
+    <script src="/js/i18n/jquery.i18n.parser.js"></script>
+    <script src="/js/i18n/jquery.i18n.emitter.js"></script>
+    <script src="/js/i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="/js/i18n/languages/ru.js"></script>
+    <script src="/js/global.js"></script>
+  </body>
+</html>

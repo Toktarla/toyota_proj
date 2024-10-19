@@ -1,0 +1,40 @@
+{
+    "questions": [
+      {
+        "question": "В каком году была основана Toyota?",
+        "options": ["1937", "1948", "1955", "1967"],
+        "correctAnswer": "1937"
+      },
+      {
+        "question": "Какая модель Toyota является самой продаваемой машиной всех времен?",
+        "options": [
+          "Toyota Corolla",
+          "Toyota Camry",
+          "Toyota Prius",
+          "Toyota RAV4"
+        ],
+        "correctAnswer": "Toyota Corolla"
+      },
+      {
+        "question": "Что означает 'Toyota'?",
+        "options": ["Прогресс", "Качество", "Надежность", "Восточное поле"],
+        "correctAnswer": "Восточное поле"
+      },
+      {
+        "question": "Какую модель Toyota часто называют 'Королем пустыни'?",
+        "options": [
+          "Toyota Land Cruiser",
+          "Toyota Hilux",
+          "Toyota 4Runner",
+          "Toyota FJ Cruiser"
+        ],
+        "correctAnswer": "Toyota Land Cruiser"
+      },
+      {
+        "question": "В какой стране находится штаб-квартира Toyota?",
+        "options": ["Япония", "Германия", "Соединенные Штаты", "Южная Корея"],
+        "correctAnswer": "Япония"
+      }
+    ]
+  }
+  

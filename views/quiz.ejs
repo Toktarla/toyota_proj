@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toyota</title>
+    <link rel="icon" type="image/x-icon" href="myicon.ico"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a href="/main" class="navbar-brand logo">Toyota<span>Sales</span></a>
+    
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/cars" data-i18n="navCars"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/suvs" data-i18n="navSUVs">Crossovers & SUVs</a>
+            </li>
+    
+            <li class="nav-item">
+              <a class="nav-link" href="/trucks" data-i18n="navTrucks">Trucks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/upcoming" data-i18n="navUpcoming">Upcoming Vehicles</a>
+            </li>
+          </ul>
+    
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="/search" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="/quiz" class="nav-link"><i class="fa-solid fa-vials"></i></a>
+            </li>
+            <li class="nav-item">
+              <a href="/user-info" class="nav-link"><i class="fa-solid fa-user"></i></a>
+            </li>
+    
+            <li class="nav-item language-selector">
+              <select id="lang-select">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <h1 class="text-center my-4" data-i18n="toyotaQuiz">Toyota Quiz</h1>
+      
+      <!-- Quiz Questions -->
+      <div id="quiz"></div>
+
+
+      <!-- Timer -->
+      <div id="timer" class="text-center text-danger my-4" >
+       <span id="timeDisplay">05:00</span>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button id="submitBtn" class="btn btn-danger" data-i18n="submitQuiz">Submit Quiz</button>
+      </div>
+      <br>
+      <div class="text-center">
+        <a href="/quiz-history"><button id="historyBtn" class="btn btn-danger" data-i18n="historyQuiz">History</button></a>
+      </div>
+      <br><br>
+    </div>
+
+    <!-- Result Modal -->
+    <div
+      class="modal fade"
+      id="resultModal"
+      tabindex="-1"
+      aria-labelledby="resultModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="resultModalLabel" data-i18n="quizResultSummary">
+              Quiz Result Summary
+            </h5>
+            
+          </div>
+          <div class="modal-body" id="resultBody"></div>
+          <div class="modal-footer">
+            <a href="/main" class="btn btn-danger" data-i18n="close">Close</a>
+
+            <button id="facebookBtn" class="btn btn-info" data-i18n="shareFacebook">
+              Share on Facebook
+            </button>
+            <button id="twitterBtn" class="btn btn-danger" data-i18n="shareTwitter">
+              Share on Twitter
+            </button>
+            <button id="linkedinBtn" class="btn btn-primary" data-i18n="shareLinkedin">
+              Share on LinkedIn
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+    <script src="js/footer.js"></script>
+    <script src="js/quiz.js"></script>
+    <!-- Language -->
+    <script src="js/i18n/jquery.i18n.js"></script>
+    <script src="js/i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/i18n/jquery.i18n.language.js"></script>
+    <script src="js/i18n/jquery.i18n.parser.js"></script>
+    <script src="js/i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="js/i18n/languages/ru.js"></script>
+    <script src="js/global.js"></script>
+  </body>
+</html>

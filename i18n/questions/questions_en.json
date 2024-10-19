@@ -1,0 +1,40 @@
+{
+    "questions": [
+      {
+        "question": "What year was Toyota founded?",
+        "options": ["1937", "1948", "1955", "1967"],
+        "correctAnswer": "1937"
+      },
+      {
+        "question": "Which Toyota model is the best-selling car of all time?",
+        "options": [
+          "Toyota Corolla",
+          "Toyota Camry",
+          "Toyota Prius",
+          "Toyota RAV4"
+        ],
+        "correctAnswer": "Toyota Corolla"
+      },
+      {
+        "question": "What does 'Toyota' mean?",
+        "options": ["Progress", "Quality", "Reliability", "East Field"],
+        "correctAnswer": "East Field"
+      },
+      {
+        "question": "Which Toyota model is often called 'King of the Desert'?",
+        "options": [
+          "Toyota Land Cruiser",
+          "Toyota Hilux",
+          "Toyota 4Runner",
+          "Toyota FJ Cruiser"
+        ],
+        "correctAnswer": "Toyota Land Cruiser"
+      },
+      {
+        "question": "In which country is Toyota headquartered?",
+        "options": ["Japan", "Germany", "United States", "South Korea"],
+        "correctAnswer": "Japan"
+      }
+    ]
+  }
+  

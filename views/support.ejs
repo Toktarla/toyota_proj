@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="pageTitle">Toyota FAQ</title>
+    <link rel="icon" type="image/x-icon" href="myicon.ico"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header {
+        margin-bottom: 60px;
+      }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="nav-placeholder"></div>
+    </header>
+    <main>
+      <div class="container py-5">
+        <br /><br /><br />
+        <h2 class="mb-4" data-i18n="faqHeading">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <span data-i18n="question1"
+                  >Question 1: What Toyota models are currently available?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer1">
+                Answer: Toyota offers a wide range of models, including sedans,
+                SUVs, trucks, and hybrids. Some popular models include the
+                Camry, Corolla, RAV4, Tacoma, and Prius.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <span data-i18n="question2"
+                  >Question 2: Where can I find Toyota dealerships near
+                  me?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer2">
+                Answer: You can locate Toyota dealerships near you by visiting
+                the official Toyota website and using the dealer locator tool.
+                Additionally, you can use online maps and directories to find
+                nearby dealerships.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <span data-i18n="question3"
+                  >Question 3: How can I schedule a test drive?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer3">
+                Answer: To schedule a test drive, you can contact your local
+                Toyota dealership directly by phone or email. Many dealerships
+                also offer online appointment scheduling through their websites.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <span data-i18n="question4"
+                  >Question 4: What are the available financing options for
+                  Toyota vehicles?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer4">
+                Answer: Toyota offers various financing options, including
+                loans, leases, and special financing programs. You can discuss
+                your financing needs with your local Toyota dealership's finance
+                department.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <span data-i18n="question5"
+                  >Question 5: What is ToyotaCare and what does it cover?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer5">
+                Answer: ToyotaCare is a no-cost maintenance plan that covers
+                scheduled maintenance and roadside assistance for a certain
+                period after purchasing a new Toyota vehicle. It typically
+                includes services like oil changes, tire rotations, and fluid
+                checks.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <span data-i18n="question6"
+                  >Question 6: How can I check if there are any recalls on my
+                  Toyota vehicle?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer6">
+                Answer: You can check for recalls on your Toyota vehicle by
+                visiting the official Toyota website and entering your vehicle's
+                VIN (Vehicle Identification Number) in the recall lookup tool.
+                Alternatively, you can contact your local Toyota dealership for
+                assistance.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <span data-i18n="question7"
+                  >Question 7: Can I customize my Toyota vehicle with
+                  accessories?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSeven"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer7">
+                Answer: Yes, Toyota offers a wide range of genuine accessories
+                that allow you to customize your vehicle according to your
+                preferences. You can purchase accessories from your local Toyota
+                dealership or through the official Toyota website.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                <span data-i18n="question8"
+                  >Question 8: How can I obtain a copy of my Toyota vehicle's
+                  owner's manual?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingEight"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer8">
+                Answer: You can obtain a copy of your Toyota vehicle's owner's
+                manual by visiting the official Toyota website and downloading
+                the manual for your specific model and year. Alternatively, you
+                can request a printed copy from your local Toyota dealership.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingNine">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseNine"
+                aria-expanded="false"
+                aria-controls="collapseNine"
+              >
+                <span data-i18n="question9"
+                  >Question 9: How do I connect my smartphone to my Toyota
+                  vehicle's multimedia system?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseNine"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingNine"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer9">
+                Answer: You can connect your smartphone to your Toyota vehicle's
+                multimedia system using Bluetooth® technology or a USB cable.
+                Refer to your vehicle's owner's manual or contact your local
+                Toyota dealership for detailed instructions.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTen">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTen"
+                aria-expanded="false"
+                aria-controls="collapseTen"
+              >
+                <span data-i18n="question10"
+                  >Question 10: How can I contact Toyota customer support for
+                  assistance?</span
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseTen"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTen"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body" data-i18n="answer10">
+                Answer: You can contact Toyota customer support by phone, email,
+                or live chat. Visit the official Toyota website for contact
+                information and support options. Additionally, you can reach out
+                to your local Toyota dealership for assistance.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer-placeholder"></div>
+
+    <script src="js/footer.js"></script>
+    <script src="js/navbar.js"></script>
+
+    <!-- Language -->
+    <script src="js/i18n/jquery.i18n.js"></script>
+    <script src="js/i18n/jquery.i18n.messagestore.js"></script>
+    <script src="js/i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="js/i18n/jquery.i18n.language.js"></script>
+    <script src="js/i18n/jquery.i18n.parser.js"></script>
+    <script src="js/i18n/jquery.i18n.emitter.js"></script>
+    <script src="js/i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script src="js/i18n/languages/en.json"></script>
+    <script src="js/i18n/languages/ru.json"></script>
+    <script src="js/global.js"></script>
+  </body>
+</html>

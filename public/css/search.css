@@ -1,0 +1,82 @@
+#searchByYearMake,
+#searchByYearMakeModel,
+#searchByColor,
+#searchByFuel {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#searchByYearMake h2,
+#searchByYearMakeModel h2,
+#searchByColor h2,
+#searchByFuel h2 {
+  margin-bottom: 10px;
+}
+#searchByYearMake input,
+#searchByYearMakeModel input,
+#searchByColor input,
+#searchByFuel input,
+#searchByFuel select {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+
+  border: 1px solid #ccc;
+  width: 200px;
+}
+#searchByYearMake button,
+#searchByYearMakeModel button,
+#searchByColor button,
+#searchByFuel button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#searchByYearMake button:hover,
+#searchByYearMakeModel button:hover,
+#searchByColor button:hover,
+#searchByFuel button:hover {
+  background-color: #0056b3;
+}
+.result-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+header {
+  margin-bottom: 50px;
+}
+
+.result-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.car-image img {
+  border-radius: 8px;
+}
+.car-details h5 {
+  margin-top: 0;
+}
+.car-details p {
+  margin-bottom: 5px;
+}
+.icon {
+  color: #007bff;
+  margin-right: 5px;
+}

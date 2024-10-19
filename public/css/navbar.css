@@ -1,0 +1,86 @@
+.navbar-brand img {
+    width: 30px; 
+    height: auto;
+    margin-bottom: 7px;
+}
+.navbar {
+  color: #bf3b3b;
+}
+.navbar-nav {
+    margin-left: auto; 
+}
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+}
+.navbar-nav .nav-item {
+    margin-right: 10px; 
+}
+.navbar-nav .nav-item i {
+    font-size: large; 
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}  
+
+.logo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+
+.logo span{
+    color: var(--main-color);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item.language-selector {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+  }
+  
+  .nav-item.language-selector select {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #333; 
+    font-size: 14px;
+  }
+  
+  .nav-item.language-selector select:focus {
+    outline: none;
+  }
+  
+  .nav-item.language-selector i.fa-globe {
+    font-size: 20px; 
+    margin-left: 5px; 
+  }
+  .custom-bg-color {
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    }
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+    color: #f3e9d2; 
+}
